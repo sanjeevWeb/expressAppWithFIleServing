@@ -1,0 +1,125 @@
+/* Modal overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* Modal content */
+  .modal-content {
+    background: white;
+    width: 90%;
+    height: 80%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Close button */
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Bold text */
+  .bold-text {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  /* Small text */
+  .small-text {
+    font-size: 14px;
+    color: #555;
+    margin: 10px 0;
+  }
+  
+  /* Dropdown */
+  .dropdown {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* New list button */
+  .new-list-button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .new-list-button:hover {
+    background: #0056b3;
+  }
+  
+  /* Input container */
+  .input-container {
+    margin-top: 10px;
+  }
+  
+  .text-input {
+    width: calc(100% - 60px);
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .save-button {
+    background: green;
+    color: white;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .save-button:hover {
+    background: darkgreen;
+  }
+  
+  /* Saved text */
+  .saved-text {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* Responsive */
+  @media (max-width: 480px) {
+    .modal-content {
+      width: 95%;
+    }
+  
+    .close-button {
+      width: 25px;
+      height: 25px;
+      font-size: 14px;
+    }
+  }
+  
